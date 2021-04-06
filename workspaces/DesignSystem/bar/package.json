@@ -1,0 +1,9 @@
+{
+  "name": "@devbro/bar",
+  "version": "1.0.0",
+  "private": false,
+  "main": "./index.js",
+  "peerDependencies": {
+    "react": "^17.0.0"
+  }
+}

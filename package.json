@@ -1,0 +1,26 @@
+{
+  "name": "@devbro/monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "workspaces": [
+    "workspaces/**/*"
+  ],
+  "scripts": {
+    "dev:web": "ultra --filter '@devbro/web' dev",
+    "dev:api": "ultra --filter '@devbro/api' dev",
+    "dev": "yarn dev:web && yarn dev:api",
+    "build:web": "ultra -r --filter '@devbro/web' build",
+    "build": "yarn build:web",
+    "start:web": "ultra -r --filter '@devbro/web' start",
+    "start": "yarn start:web"
+  },
+  "devDependencies": {
+    "ultra-runner": "^3.10.5"
+  },
+  "ultra": {
+    "concurrent": [
+      "dev"
+    ]
+  }
+}

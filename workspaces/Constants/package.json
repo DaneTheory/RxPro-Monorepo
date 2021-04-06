@@ -1,0 +1,6 @@
+{
+  "name": "@devbro/constants",
+  "version": "1.0.0",
+  "private": false,
+  "main": "./index.js"
+}
